@@ -1,0 +1,11 @@
+Step 8 — Reranking
+==================
+
+Retrieve a broad top-6 from the 10-K, then a cross-encoder reranker re-scores and keeps the best 2 chunks.
+
+Question: What was Acme's gross margin in fiscal 2024 and why did it expand?
+
+Response:
+Acme’s gross margin in fiscal 2024 was **43.1%**. It expanded from the prior year’s 40.2% **because the company sold a higher proportion of software, which carries a higher margin, increasing the overall software mix.**
+
+------------------------------------------------------------

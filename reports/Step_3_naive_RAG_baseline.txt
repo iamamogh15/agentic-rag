@@ -1,0 +1,18 @@
+Step 3 — Naive RAG baseline
+===========================
+
+One combined index over all three documents, a single top-k retrieval pass, no routing or self-checking.
+
+Question: What was Acme's full-year 2024 total revenue?
+
+Response:
+Acme's full‑year 2024 total revenue was **$612.4 million**.
+
+------------------------------------------------------------
+
+Question: Does Acme Robotics' most recent quick ratio meet the firm's minimum quick-ratio requirement under its liquidity risk policy?
+
+Response:
+The context does not provide Acme Robotics’ quick‑ratio figure, nor does the Birchwood Asset Management liquidity‑risk policy specify a numeric minimum quick‑ratio requirement. Therefore, there is insufficient information to determine whether Acme Robotics meets the policy’s quick‑ratio threshold.
+
+------------------------------------------------------------

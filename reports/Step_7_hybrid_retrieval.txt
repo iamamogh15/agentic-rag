@@ -1,0 +1,11 @@
+Step 7 — Hybrid dense + sparse retrieval
+========================================
+
+A dense vector retriever and a BM25 sparse retriever over the same chunks, fused with reciprocal rank fusion.
+
+Question: Does Acme Robotics' most recent quick ratio meet the firm's minimum quick-ratio requirement under its liquidity risk policy?
+
+Response:
+Yes. Acme Robotics’ most recent quick ratio was **1.18** (as noted in the Q3 2024 discussion). The liquidity risk policy requires a quick ratio of **at least 1.00** for non‑financial corporates, so the company’s current quick ratio satisfies the minimum requirement.
+
+------------------------------------------------------------

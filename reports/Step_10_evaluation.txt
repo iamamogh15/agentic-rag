@@ -1,0 +1,13 @@
+Step 10 — RAG evaluation
+========================
+
+The evaluation triad: a faithfulness check that the answer is grounded in the retrieved context, an answer relevancy score against the question, and a context relevancy score for the retrieved chunks against the question.
+
+Question: What was Acme's net income per diluted share in fiscal 2024?
+
+Response:
+Acme’s net income was **$1.92 per diluted share** in fiscal 2024.
+
+Note: Faithful to sources? True | Answer relevancy (0-1): 1.0 | Context relevancy (0-1): 1.0
+
+------------------------------------------------------------

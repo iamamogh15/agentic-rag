@@ -1,0 +1,105 @@
+method,q_no,correct,answer
+3_naive,1,True,Acme's full‑year 2024 total revenue was **$612.4 million**.
+3_naive,2,True,Acme’s net income was **$1.92 per diluted share** in fiscal 2024.
+3_naive,3,True,Acme's gross margin in fiscal 2024 was **43.1%**.
+3_naive,4,True,Acme's quick ratio at the end of Q3 was **1.18**.
+3_naive,5,True,The firm requires a quick ratio of **at least 1.00**; any quick ratio below 1.00 is a hard block that prevents opening a new long position.
+3_naive,6,True,"Yes. Acme’s Q3 quick ratio was 1.18, which is above the firm’s minimum quick‑ratio requirement of 1.00."
+3_naive,7,False,"The context does not specify any minimum quick‑ratio requirement for Acme Robotics. It only mentions that the quick ratio fell to 1.18 at the end of Q3 and is expected to rise above 1.2 by year‑end, and that the relevant covenant is a **current‑ratio floor of 1.25**, not a quick‑ratio threshold. Therefore, there is no information in the provided context about a firm‑required minimum quick ratio."
+3_naive,8,False,"The context does not provide Acme Robotics’ year‑end 2024 current ratio, so it cannot be determined whether it meets the firm’s current‑ratio threshold."
+3_naive,9,True,"The firm’s internal policy caps net‑debt‑to‑EBITDA at **3.5 ×**.  
+Acme’s revolving credit facility covenant requires a maximum net‑debt‑to‑EBITDA of **3.0 ×**."
+3_naive,10,False,"Acme’s three largest customers together accounted for **41 % of total revenue** in fiscal 2024.
+
+According to the firm’s concentration policy (Section 4):
+
+- No single issuer may hold more than **5 % of portfolio net asset value (NAV)** at cost.  
+- If an issuer’s own customer concentration **exceeds 40 % of its revenue**, it is flagged as an **elevated single‑name risk** and its holding is **capped at 3 % of NAV**."
+4_router,1,True,Acme’s full‑year 2024 total revenue was **$612.4 million**.
+4_router,2,True,Acme’s net income was **$1.92 per diluted share** in fiscal 2024.
+4_router,3,True,Acme's gross margin in fiscal 2024 was **43.1%**.
+4_router,4,True,Acme’s quick ratio at the end of Q3 was **1.18**.
+4_router,5,True,The firm requires a **quick ratio of at least 1.00**; any quick ratio below 1.00 is a hard block that prevents opening a new long position.
+4_router,6,False,"The transcript does not specify any minimum quick‑ratio covenant. The only liquidity covenant mentioned is a **current‑ratio floor of 1.25** on the revolving facility. While the quick ratio fell to **1.18** at the end of Q3, that metric is not a covenant requirement, so there is no minimum quick‑ratio that needs to be met."
+4_router,7,False,"Acme’s quick ratio at fiscal‑year‑end 2024 was **1.23**. The only covenant disclosed in the provided context is a **current‑ratio minimum of 1.25**; a specific minimum quick‑ratio requirement is not mentioned. Therefore, there is no stated quick‑ratio threshold for Acme to meet, so we cannot determine whether the quick ratio satisfies a requirement."
+4_router,8,False,"Yes. Acme’s year‑end 2024 current ratio was **1.61**, which is above the required minimum of **1.25** set by its credit covenant."
+4_router,9,False,"The firm’s policy caps the net‑debt‑to‑EBITDA ratio at **3.0**, and the revolving credit facility includes a covenant that also limits net‑debt‑to‑EBITDA to a maximum of **3.0**."
+4_router,10,False,"Acme’s three largest customers accounted for **41 % of total revenue** in fiscal 2024.
+
+The excerpt does not contain any statement about a firm policy regarding issuers that exceed a concentration‑threshold; that information is not provided in the given context."
+5_subquestion,1,True,Acme's full‑year 2024 total revenue was **$612.4 million**.
+5_subquestion,2,True,Acme Robotics’ net income was **$1.92 per diluted share** for fiscal year 2024.
+5_subquestion,3,True,Acme's gross margin in fiscal 2024 was **43.1%**.
+5_subquestion,4,True,1.18
+5_subquestion,5,True,The firm requires a **quick ratio of at least 1.00** to open a new long position. Any issuer with a quick ratio below 1.00 is a hard block and cannot be used for a new long position.
+5_subquestion,6,True,Yes. Acme Robotics’ quick ratio of **1.18** in Q3 FY2024 is above Birchwood Asset Management’s minimum requirement of a **quick ratio of at least 1.00** for non‑financial corporate issuers.
+5_subquestion,7,False,"Based on the information provided, we don’t have Acme Robotics’ year‑end 2024 quick ratio. Since the firm’s minimum quick‑ratio requirement is a quick ratio of at least 1.00, we cannot determine whether Acme’s ratio meets that threshold."
+5_subquestion,8,False,"Based on the information available, Acme Robotics’ year‑end 2024 current ratio is not provided. Because the actual ratio is unknown, we cannot determine whether it meets Birchwood Asset Management’s required current‑ratio threshold of 1.50."
+5_subquestion,9,True,"- **Birchwood Asset Management’s internal policy:** the maximum net‑debt‑to‑EBITDA ratio is **3.5 ×**.  
+
+- **Acme Robotics’ FY2024 credit‑facility covenant:** the revolving credit facility requires a **net‑debt‑to‑EBITDA ratio not to exceed 3.0 ×**."
+5_subquestion,10,False,"Acme Robotics’ three largest customers account for **41 %** of the company’s FY 2024 revenue.
+
+Birchwood Asset Management’s internal liquidity/counter‑party risk policy requires that:
+
+* No single issuer may represent more than **5 % of the portfolio’s net‑asset value (NAV) at cost**. If a position would exceed this level it must be reduced (or not added) to stay at or below the 5 % cap.
+
+* If an issuer reports that **more than 40 % of its own revenue comes from its top customers**, the issuer is classified as “elevated single‑name risk.” In that case the firm imposes a stricter limit of **3 % of NAV** for that issuer, regardless of the general 5 % rule.
+
+Because Acme’s top‑three‑customer concentration (41 %) is above the 40 % threshold, Birchwood would treat Acme as an elevated‑risk issuer and limit any exposure to Acme to **no more than 3 % of the portfolio’s NAV**."
+6_agent,1,True,Acme Robotics reported **total revenue of $612.4 million for fiscal year 2024**【annual_report_10k: FY2024 Form 10‑K】.
+6_agent,2,True,Acme Robotics reported **net income of $1.92 per diluted share for fiscal 2024**【annual_report_10k: net income per diluted share fiscal 2024】.
+6_agent,3,True,Acme Robotics reported a **gross margin of 43.1 % for fiscal 2024**【annual_report_10k】.
+6_agent,4,True,Acme Robotics reported a **quick ratio of 1.18 at the end of Q3 FY 2024**【q3_earnings_call: quick ratio】.
+6_agent,5,True,"The firm’s internal liquidity/counterparty risk policy states that a **quick ratio of at least 1.00** is required to open a new long position; any quick ratio below 1.00 is a hard block.  
+
+*Source: Birchwood Asset Management – Liquidity/Counterparty Risk Policy (current policy document).*"
+6_agent,6,False,"Acme Robotics reported a **quick ratio of 1.18 at the end of Q3 FY 2024**【q3_earnings_call】.  
+
+Birchwood Asset Management’s liquidity policy requires a **minimum quick ratio of 1.00** for non‑financial corporate issuers【firm_risk_policy】.  
+
+Since 1.18 ≥ 1.00, Acme’s Q3 quick ratio **meets** the firm’s minimum quick‑ratio requirement."
+6_agent,7,False,"Acme Robotics reported a **quick ratio of 1.23** at fiscal year‑end 2024 (Acme FY2024 Form 10‑K).  
+
+Birchwood Asset Management’s internal liquidity policy sets a **minimum quick‑ratio requirement of 1.00** for non‑financial corporate issuers (Birchwood risk policy).  
+
+Since 1.23 ≥ 1.00, Acme’s year‑end 2024 quick ratio **meets** the firm’s minimum quick‑ratio requirement."
+6_agent,8,False,"Acme Robotics reported a **year‑end 2024 current ratio of 1.61**【annual_report_10k】.  
+Birchwood Asset Management’s liquidity policy requires a **current‑ratio of at least 1.50**【firm_risk_policy】.  
+
+Since 1.61 ≥ 1.50, Acme’s year‑end 2024 current ratio **meets** the firm’s required threshold."
+6_agent,9,True,"- **Firm’s policy limit:** The Birchwood Asset Management liquidity/counterparty risk policy sets a net‑debt‑to‑EBITDA limit of **≤ 3.5 ×** for non‑financial corporate issuers (Birchwood policy, applicable period).  
+
+- **Acme’s covenant limit:** Acme Robotics’ credit‑facility covenant caps the net‑debt‑to‑EBITDA ratio at a maximum of **3.0 ×** (Acme Robotics FY2024 Form 10‑K)."
+6_agent,10,False,"- **Acme Robotics’ top three customers** accounted for **41 % of the company’s FY 2024 revenue**【annual_report_10k: FY 2024 Form 10‑K – “top three customers share of revenue”】.  
+
+- **Birchwood Asset Management’s policy** on issuer concentration states that if an issuer’s customer concentration **exceeds 40 % of its revenue**, the issuer is classified as “elevated single‑name risk” and the holding is **capped at 3 % of the portfolio’s net asset value (NAV) at cost**【firm_risk_policy: internal liquidity/counterparty risk policy – “concentration threshold”】."
+7_hybrid,1,True,Acme’s total revenue for fiscal 2024 was **$612.4 million**.
+7_hybrid,2,True,Acme’s net income per diluted share in fiscal 2024 was **$1.92**.
+7_hybrid,3,True,Acme’s gross margin for fiscal 2024 was **43.1%**.
+7_hybrid,4,True,Acme’s quick ratio at the end of Q3 was **1.18**.
+7_hybrid,5,True,The policy requires a **quick ratio of at least 1.00**; any issuer with a quick ratio below 1.00 is a hard block for opening a new long position.
+7_hybrid,6,True,"Yes. Acme’s quick ratio in Q3 was **1.18** (and 1.23 at year‑end), which is above the firm’s minimum quick‑ratio requirement of **1.00**."
+7_hybrid,7,True,"Yes. Acme’s quick ratio at fiscal year‑end 2024 was **1.23**, which is above the firm’s minimum quick‑ratio requirement of **1.00**."
+7_hybrid,8,True,"Yes. Acme’s year‑end 2024 current ratio was **1.61**, which is above the firm’s required threshold (the policy calls for ≥ 1.50, and the revolving‑credit covenant requires ≥ 1.25)."
+7_hybrid,9,True,"The firm’s internal policy caps net‑debt‑to‑EBITDA at **3.5 ×**.  
+Acme’s revolving credit facility covenant limits net‑debt‑to‑EBITDA to **3.0 ×**."
+7_hybrid,10,False,"- **Share of revenue from the three largest customers:** 41 % of Acme’s total revenue in fiscal 2024.
+
+- **Policy for issuers that exceed the concentration threshold:** The firm’s concentration rules state that any issuer whose **customer concentration is greater than 40 % of revenue** is flagged as an **elevated single‑name risk** and its holding is limited to **no more than 3 % of the portfolio’s net asset value (NAV)** (in addition, no single issuer may exceed 5 % of NAV overall)."
+9_hybrid_rerank,1,True,Acme’s full‑year 2024 total revenue was **$612.4 million**.
+9_hybrid_rerank,2,True,Acme’s net income was **$1.92 per diluted share** in fiscal 2024.
+9_hybrid_rerank,3,True,Acme’s gross margin for fiscal 2024 was **43.1%**.
+9_hybrid_rerank,4,True,Acme’s quick ratio at the end of Q3 was **1.18**.
+9_hybrid_rerank,5,True,The firm requires a **quick ratio of at least 1.00**; any quick ratio below 1.00 is a hard block that prevents opening a new long position.
+9_hybrid_rerank,6,True,"Yes. Acme’s quick ratio of **1.18** at the end of Q3 is above the firm’s minimum requirement of **1.00**, so it meets the quick‑ratio threshold."
+9_hybrid_rerank,7,True,"Yes. Acme’s year‑end 2024 quick ratio was **1.23**, which is above the firm’s minimum requirement of **1.00**."
+9_hybrid_rerank,8,True,"Yes. Acme’s year‑end 2024 current ratio was **1.61**, which is above the firm’s required threshold of **1.50**."
+9_hybrid_rerank,9,True,"The firm’s internal policy caps net‑debt‑to‑EBITDA at **3.5 ×**.  
+Acme’s revolving credit facility covenant requires a maximum net‑debt‑to‑EBITDA of **3.0 ×**."
+9_hybrid_rerank,10,False,"Acme’s three largest customers together accounted for **41 % of the company’s revenue** in fiscal 2024.
+
+According to the firm’s concentration policy:
+
+- No single issuer may represent more than **5 % of portfolio net asset value (NAV)** at cost.  
+- Any issuer whose **customer concentration exceeds 40 % of its revenue** is flagged as an **“elevated single‑name risk”** and is **capped at 3 % of NAV**."

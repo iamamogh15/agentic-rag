@@ -1,0 +1,37 @@
+Step 4 — Router query engine
+============================
+
+An LLM selector picks exactly one per-document tool per query.
+
+Question: What is the firm's minimum required quick ratio for a new long position?
+
+Response:
+The firm requires a **quick ratio of at least 1.00**; any quick ratio below 1.00 is a hard block that prevents opening a new long position.
+
+------------------------------------------------------------
+
+Question: What was Acme's Q3 quick ratio?
+
+Response:
+Acme’s quick ratio at the end of Q3 was **1.18**.
+
+------------------------------------------------------------
+
+Question: What credit-facility covenants does Acme disclose in its 10-K?
+
+Response:
+Acme discloses that its revolving credit facility contains two financial‑covenant requirements:
+
+* **Current‑ratio covenant:** the company must keep a current ratio of **at least 1.25**.  
+* **Net‑debt‑to‑EBITDA covenant:** the company must keep a **maximum net‑debt‑to‑EBITDA ratio of 3.0**.  
+
+A breach of either covenant could trigger accelerated repayment of the facility.
+
+------------------------------------------------------------
+
+Question: Does Acme Robotics' most recent quick ratio meet the firm's minimum quick-ratio requirement under its liquidity risk policy?
+
+Response:
+The context does not provide information about a minimum quick‑ratio requirement in Acme Robotics’ liquidity risk policy, so it cannot be determined from the given excerpt whether the most recent quick ratio meets such a requirement.
+
+------------------------------------------------------------

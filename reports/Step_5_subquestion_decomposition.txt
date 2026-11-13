@@ -1,0 +1,20 @@
+Step 5 — Sub-question decomposition
+===================================
+
+An LLM splits a cross-source question into per-tool sub-questions, answers each, then synthesises.
+
+Question: How did Acme's quick ratio change from year-end 2024 to Q3, and does the Q3 level breach the firm's risk policy?
+
+Response:
+Acme Robotics’ quick ratio fell from **1.23** at year‑end 2024 to **1.18** in Q3 FY2024 – a decline of **0.05** points.  
+
+Birchwood Asset Management’s policy requires a quick ratio of **at least 1.00**. Since the Q3 ratio of **1.18** remains above that threshold, it does **not** breach the firm’s risk policy.
+
+------------------------------------------------------------
+
+Question: Does Acme Robotics' most recent quick ratio meet the firm's minimum quick-ratio requirement under its liquidity risk policy?
+
+Response:
+Yes. Acme Robotics’ quick ratio of **1.18** exceeds the required minimum quick ratio of **1.00**.
+
+------------------------------------------------------------

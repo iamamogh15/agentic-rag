@@ -1,0 +1,117 @@
+Step 6 — Self-correcting agent
+==============================
+
+A LangGraph ReAct agent calls the document tools, judges whether it has both the figure and the threshold, and re-queries when it does not.
+
+Task: Can we open a new long position in Acme Robotics under the firm's liquidity policy? Check the quick-ratio rule against Acme's most recent disclosed quick ratio.
+
+Response:
+**Liquidity‑policy quick‑ratio test**
+
+| Source | Figure | Requirement |
+|--------|--------|-------------|
+| Acme Robotics Q3 FY2024 earnings‑call transcript – “quick ratio” | **1.18** (end of Q3) | Policy‑required minimum quick ratio for a non‑financial corporate issuer: **≥ 1.00** (Birchwood Asset Management liquidity policy) |
+| Birchwood Asset Management internal liquidity/counter‑party risk policy | **≥ 1.00** (hard block if below) | – |
+
+**Result:** Acme Robotics’ most recent disclosed quick ratio (1.18) exceeds the firm’s required threshold of 1.00. Therefore, the quick‑ratio rule does **not** block opening a new long position in Acme Robotics under the firm’s liquidity policy.
+
+Retrieved chunks:
+  [1] (earnings_call) **Priya Nair (CFO):** Thanks, Jordan. A few financial highlights. Gross margin in
+the quarter was **43.5%**, up roughly 300 basis points year over year, again driven
+by software mix. We ended the quarter with **$121 million** in cash. I want to
+flag that our **quick ratio dipped to 1.18 at the end o...
+  [2] (earnings_call) ### Q&A
+
+**Analyst (Morgan Healy, Cedar Capital):** Priya, can you talk about the inventory
+build and what it means for your liquidity covenants?
+
+**Priya Nair (CFO):** Sure. The covenant that matters here is the **current ratio
+floor of 1.25** on our revolving facility. Our current ratio remains we...
+  [3] (earnings_call) **Analyst (Morgan Healy, Cedar Capital):** And the LiDAR supplier transition — any
+risk to Q4 shipments?
+
+**Jordan Ellis (CEO):** We have dual-sourced the next-generation module and built a
+buffer stock, which is part of why inventory is elevated. We do not expect a
+material shipment impact in Q4.
+
+...
+  [4] (risk_policy) For any issuer classified as **non-financial corporate**, the analyst must verify,
+using the issuer's most recent annual report, that:
+
+- **Current ratio ≥ 1.50.** Issuers with a current ratio below 1.50 require a
+  documented exception approved by the Risk Committee.
+- **Quick ratio ≥ 1.00.** A qui...
+  [5] (risk_policy) ## 4. Concentration
+
+No single issuer may exceed **5% of portfolio net asset value** at cost. Issuers
+whose own customer concentration exceeds 40% of revenue are flagged as
+**elevated single-name risk** and are capped at **3% of NAV**.
+
+## 5. Documentation
+
+Every position memo must cite the specific...
+  [6] (risk_policy) # Birchwood Asset Management — Counterparty & Liquidity Risk Policy (Excerpt)
+
+> *Synthetic internal policy document created for the Agentic RAG lab. Birchwood
+> Asset Management is a fictional firm; thresholds are illustrative and not
+> investment advice.*
+
+**Policy ID:** RISK-LIQ-007
+**Owner:** Of...
+
+------------------------------------------------------------
+
+Question: Does Acme Robotics' most recent quick ratio meet the firm's minimum quick-ratio requirement under its liquidity risk policy?
+
+Response:
+Acme Robotics reported a **quick ratio of 1.18 at the end of Q3 FY 2024**【q3_earnings_call】.  
+
+Birchwood Asset Management’s liquidity‑risk policy states that a non‑financial corporate issuer must maintain a **quick ratio of at least 1.00**【firm_risk_policy】.  
+
+Since 1.18 ≥ 1.00, Acme Robotics’ most recent quick ratio **meets** the firm’s minimum quick‑ratio requirement.
+
+Retrieved chunks:
+  [1] (earnings_call) **Priya Nair (CFO):** Thanks, Jordan. A few financial highlights. Gross margin in
+the quarter was **43.5%**, up roughly 300 basis points year over year, again driven
+by software mix. We ended the quarter with **$121 million** in cash. I want to
+flag that our **quick ratio dipped to 1.18 at the end o...
+  [2] (earnings_call) ### Q&A
+
+**Analyst (Morgan Healy, Cedar Capital):** Priya, can you talk about the inventory
+build and what it means for your liquidity covenants?
+
+**Priya Nair (CFO):** Sure. The covenant that matters here is the **current ratio
+floor of 1.25** on our revolving facility. Our current ratio remains we...
+  [3] (earnings_call) **Analyst (Morgan Healy, Cedar Capital):** And the LiDAR supplier transition — any
+risk to Q4 shipments?
+
+**Jordan Ellis (CEO):** We have dual-sourced the next-generation module and built a
+buffer stock, which is part of why inventory is elevated. We do not expect a
+material shipment impact in Q4.
+
+...
+  [4] (risk_policy) For any issuer classified as **non-financial corporate**, the analyst must verify,
+using the issuer's most recent annual report, that:
+
+- **Current ratio ≥ 1.50.** Issuers with a current ratio below 1.50 require a
+  documented exception approved by the Risk Committee.
+- **Quick ratio ≥ 1.00.** A qui...
+  [5] (risk_policy) ## 4. Concentration
+
+No single issuer may exceed **5% of portfolio net asset value** at cost. Issuers
+whose own customer concentration exceeds 40% of revenue are flagged as
+**elevated single-name risk** and are capped at **3% of NAV**.
+
+## 5. Documentation
+
+Every position memo must cite the specific...
+  [6] (risk_policy) # Birchwood Asset Management — Counterparty & Liquidity Risk Policy (Excerpt)
+
+> *Synthetic internal policy document created for the Agentic RAG lab. Birchwood
+> Asset Management is a fictional firm; thresholds are illustrative and not
+> investment advice.*
+
+**Policy ID:** RISK-LIQ-007
+**Owner:** Of...
+
+------------------------------------------------------------

@@ -1,0 +1,11 @@
+Step 9 — Hybrid search + reranking
+==================================
+
+The Step 7 hybrid retriever for recall, with a Step 8 cross-encoder reranker attached to trim the fused pool to the best chunks for precision.
+
+Question: Does Acme Robotics' most recent quick ratio meet the firm's minimum quick-ratio requirement under its liquidity risk policy?
+
+Response:
+The context does not provide Acme Robotics’ actual quick‑ratio figure, so it cannot be determined from the information given whether the quick‑ratio meets the firm’s minimum requirement.
+
+------------------------------------------------------------
